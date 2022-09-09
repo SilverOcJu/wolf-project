@@ -5,13 +5,14 @@ import Stack from '@mui/material/Stack';
 // Componentes
 import Navbar from './components/Navbar';
 import RedForm from './components/RedForm';
+import FormatoProveedores from './components/FormatoProveedores';
 
 function App() {
   return (
     <>
     <Navbar />
     <Box>
-      <RedForm />
+      <FormatoProveedores />
     </Box>
     </>
   );
