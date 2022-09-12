@@ -1,16 +1,35 @@
+// React
+import { useNavigate } from 'react-router-dom';
+
 // MUI
-import Box from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Divider from '@mui/material/Divider';
+import Button from '@mui/material/Button';
 
-import logo from '../images/wolf-logo.png';
+//ICON
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const RedForm = () => {
+  const navigate = useNavigate();
   return (
-    <>
+    <Box
+      sx={{ 
+      my: '10px',
+      mx: 'auto', 
+      width: '1400px', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      display: 'flex', 
+      flexDirection: 'column',
+      borderRadius: '17px',
+      bgcolor: '#efedee',
+    }}
+    >
+      <Button startIcon={<ArrowBackIcon />} onClick={() => navigate("/")}>Volver atrás</Button>
       <Grid alignItems="center" container sx={{ m:2, p:2 }} rowSpacing={1} columnSpacing={{ xs:1, sm:2, md:3 }}>
         <Grid item xs={12}>
           <Typography variant="h5" align="center">Requerimiento de pago proveedor</Typography>
@@ -241,7 +260,7 @@ const RedForm = () => {
           />
         </Grid>
       </Grid>
-    </>
+    </Box>
   ) 
 }
 

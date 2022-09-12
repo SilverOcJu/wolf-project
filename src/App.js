@@ -7,14 +7,15 @@ import Navbar from './components/Navbar';
 import RedForm from './components/RedForm';
 import FormatoProveedores from './components/FormatoProveedores';
 
+// Router
+import Router from './utils/routes';
+
 function App() {
   return (
-    <>
-    <Navbar />
     <Box>
-      <FormatoProveedores />
+      <Navbar />
+      <Router />
     </Box>
-    </>
   );
 }
 
