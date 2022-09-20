@@ -18,16 +18,17 @@ const RedForm = () => {
   return (
     <Box
       sx={{ 
-      my: '10px',
-      mx: 'auto', 
-      width: '1400px', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      display: 'flex', 
-      flexDirection: 'column',
-      borderRadius: '17px',
-      bgcolor: '#efedee',
-    }}
+        my: '10px',
+        mx: 'auto', 
+        justifyContent: 'center', 
+        alignContent: 'center', 
+        display: 'flex', 
+        flexDirection: 'column',
+        borderRadius: '17px',
+        border: 1,
+        borderColor: 'LightGray',
+        borderRadius: '5px'
+      }}
     >
       <Button startIcon={<ArrowBackIcon />} onClick={() => navigate("/")}>Volver atrás</Button>
       <Grid alignItems="center" container sx={{ m:2, p:2 }} rowSpacing={1} columnSpacing={{ xs:1, sm:2, md:3 }}>

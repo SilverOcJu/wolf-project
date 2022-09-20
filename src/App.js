@@ -13,7 +13,6 @@ import Router from './utils/routes';
 function App() {
   return (
     <Box>
-      <Navbar />
       <Router />
     </Box>
   );
