@@ -30,7 +30,7 @@ export default function FormatoProveedores() {
     { 
       /* Pago de prueba */
       id: 'W-00213', 
-      solicitante: 'PAO', 
+      solicitante: 'JUAN', 
       proyecto: 'IS-04124-WO', 
       reqFecha: '11/4/2022', 
       pagoFecha: '12/04/2022', 
