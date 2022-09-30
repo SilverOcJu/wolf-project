@@ -35,7 +35,7 @@ const MainContainer = () => {
               p={2}
               mx={{ xs: '10px', sm: '25px' }}
               mr="0"
-              mt="35px"
+              mt="10px"
               mb="20px"
               sx={{ position: 'sticky', top: '80px' }}
             >

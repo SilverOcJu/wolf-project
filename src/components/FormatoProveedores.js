@@ -13,74 +13,206 @@ export default function FormatoProveedores() {
   const navigate = useNavigate();
   // DEFINICIÓN DE FILAS //
   const rows = [
-    { id: 1, razonSocial: 'FEMSA', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 2, razonSocial: 'IPN', cant: 10, dias: 10, costoUnit: 10000, costo: 10000, subtotal: 10000, iva: 1300, total: 11300 },
-    { id: 3, razonSocial: 'UNAM', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 4, razonSocial: 'PEPSI', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 5, razonSocial: 'LOREM', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 6, razonSocial: 'IPSUM', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 7, razonSocial: 'SULAKE', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 8, razonSocial: 'XIAOMI', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 9, razonSocial: 'HP', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
-    { id: 10, razonSocial: 'KFC', cant: 10, dias: 10, costoUnit: 20000, costo: 20000, subtotal: 20000, iva: 2300, total: 22300 },
+    { 
+      /* Pago de prueba */
+      id: 'W-00212', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00213', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00214', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00215', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00216', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00217', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00218', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
+    { 
+      /* Pago de prueba */
+      id: 'W-00219', 
+      solicitante: 'PAO', 
+      proyecto: 'IS-04124-WO', 
+      reqFecha: '11/4/2022', 
+      pagoFecha: '12/04/2022', 
+      razonSocial: 'ADMINISTRACION Y CONSTRUCCION ALOUET TE SA DE CV',
+      total: 65250.00,
+      status: 'REALIZADO',
+      cuentaBanco: '03618050061',
+      banco: 'INBURSA',
+      pdfFac: 'Ok',
+    },
   ];
   // DEFINICIÓN DE COLUMNAS //
   const columns = [
-    { field: 'id', headerName: 'ID', width: 90 },
+    { field: 'id', headerName: 'No. Solicitud', width: 90 },
+    {
+      field: 'solicitante',
+      headerName: 'Solicitante',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'proyecto',
+      headerName: 'No. de Proyecto',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'reqFecha',
+      headerName: 'Fecha de Requisición',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'pagoFecha',
+      headerName: 'Fecha de Pago',
+      width: 150,
+      editable: true,
+    },
+    {
+      field: 'transFecha',
+      headerName: 'Fecha de Transferencia',
+      width: 150,
+      editable: true,
+    }, 
+    {
+      field: 'nombreComercial',
+      headerName: 'Nombre Comercial',
+      width: 150,
+      editable: true,
+    }, 
     {
       field: 'razonSocial',
-      headerName: 'Razon Social',
+      headerName: 'Razón Social',
       width: 150,
       editable: true,
-    },
-    {
-      field: 'cant',
-      headerName: 'Cantidad',
-      width: 150,
-      editable: true,
-      type: 'number',
-    },
-    {
-      field: 'dias',
-      headerName: 'Dias',
-      width: 150,
-      editable: true,
-      type: 'number',
-    },
-    {
-      field: 'costoUnit',
-      headerName: 'Costo Unitario',
-      width: 150,
-      editable: true,
-      type: 'number',
-    },
-    {
-      field: 'costo',
-      headerName: 'Costo',
-      width: 150,
-      editable: true,
-      type: 'number',
     }, 
     {
-      field: 'subtotal',
-      headerName: 'Sub Total',
+      field: 'concepto',
+      headerName: 'Concepto',
       width: 150,
       editable: true,
-      type: 'number',
-    }, 
-    {
-      field: 'iva',
-      headerName: 'IVA',
-      width: 150,
-      editable: true,
-      type: 'number',
     }, 
     {
       field: 'total',
-      headerName: 'TOTAL',
+      headerName: 'Total',
       width: 150,
       editable: true,
       type: 'number',
+    }, 
+    {
+      field: 'status',
+      headerName: 'Status',
+      width: 150,
+      editable: true,
+    }, 
+    {
+      field: 'cuentaBanco',
+      headerName: 'Cuenta Banco',
+      width: 150,
+      editable: true,
+    }, 
+    {
+      field: 'banco',
+      headerName: 'Banco',
+      width: 150,
+      editable: true,
+    }, 
+    {
+      field: 'obs',
+      headerName: 'Observaciones',
+      width: 150,
+      editable: true,
+    }, 
+    {
+      field: 'pdfFac',
+      headerName: 'PDF Fac.',
+      width: 150,
+      editable: true,
     }, 
     {
       field: 'Acciones',
@@ -104,11 +236,11 @@ export default function FormatoProveedores() {
   ];
 
   return (
-    <Box sx={{ height: 400, width: '100%' }}>
+    <Box sx={{ height: 500, width: '100%' }}>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
+        pageSize={7}
         rowsPerPageOptions={[5]}
         checkboxSelection
         disableSelectionOnClick
