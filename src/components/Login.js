@@ -1,6 +1,6 @@
 // React
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
 // MUI
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
@@ -11,6 +11,17 @@ import logo from "../images/WOLF XP.png";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [credentials, setCredentials] = useState({
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+    setCredentials({
+      ...credentials,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
     <Box
@@ -51,9 +62,21 @@ const Login = () => {
           }}
         />
         <Typography variant="h4" mt={5}>Inicio de sesión</Typography>
-        <TextField id="email" label="Correo electrónico" variant="outlined" sx={{ m:2 }} />
-        <TextField id="password" label="Contraseña" variant="outlined" type="password" sx={{ m:2 }} />
-        <Button sx={{ m:2 }} variant="contained" onClick={() => navigate('/main')} >Iniciar sesión</Button>
+        <TextField id="email" label="Correo electrónico" variant="outlined" sx={{ m:2 }} name="email" value={credentials.email} onChange={handleChange}/>
+        <TextField id="password" label="Contraseña" variant="outlined" type="password" sx={{ m:2 }} name="password" value={credentials.password} onChange={handleChange}/>
+        <Button 
+          sx={{ m:2 }} 
+          variant="contained" 
+          onClick={() =>
+            credentials.email === "usuario1" && credentials.password ==="password" ? (
+              navigate('main', {
+                user: 'Capturista'
+              })
+            ) : console.log(credentials)
+          } 
+        >
+          Iniciar sesión
+        </Button>
       </Box>
     </Box>
   ); 

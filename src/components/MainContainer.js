@@ -47,8 +47,8 @@ const MainContainer = () => {
           </Grid>
 
           <Grid item xs={12} sm={7} md={8} lg={9}>
-            { selectedIndex === 0 && <FormatoProveedores /> }
-            { selectedIndex === 1 && <RedForm /> }
+            { selectedIndex === 0 && <FormatoProveedores selectedIndex={selectedIndex} handleListItemClick={handleListItemClick}/> }
+            { selectedIndex === 1 && <RedForm selectedIndex={selectedIndex} handleListItemClick={handleListItemClick}/> }
           </Grid>
         </Grid>
       </Box>

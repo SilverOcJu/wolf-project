@@ -13,8 +13,10 @@ import Button from '@mui/material/Button';
 //ICON
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const RedForm = () => {
+const RedForm = (props) => {
   const navigate = useNavigate();
+  const { selectedIndex, handleListItemClick } = props;
+
   return (
     <Box
       sx={{ 

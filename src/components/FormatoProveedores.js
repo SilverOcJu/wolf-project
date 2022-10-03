@@ -9,8 +9,10 @@ import { DataGrid, GridActionsCellItem } from '@mui/x-data-grid';
 import NotesIcon from '@mui/icons-material/Notes';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
-export default function FormatoProveedores() {
+export default function FormatoProveedores(props) {
   const navigate = useNavigate();
+  const { selectedIndex, handleListItemClick } = props;
+
   // DEFINICIÓN DE FILAS //
   const rows = [
     { 
@@ -223,8 +225,8 @@ export default function FormatoProveedores() {
           icon={<NotesIcon />}
           label="Llenar formato de requisición"
           showInMenu
-          onClick={() => {
-            navigate('formulario');
+          onClick={(e) => {
+            handleListItemClick(e,1);
           }}
         />,
         <GridActionsCellItem
@@ -242,8 +244,6 @@ export default function FormatoProveedores() {
         columns={columns}
         pageSize={7}
         rowsPerPageOptions={[5]}
-        checkboxSelection
-        disableSelectionOnClick
         experimentalFeatures={{ newEditingApi: true }}
       />
     </Box>
